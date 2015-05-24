@@ -7,97 +7,97 @@ Activity - activity performed when the corresponding measurements were taken
 ###
 Activity types
 
-WALKING
-WALKING_UPSTAIRS
-WALKING_DOWNSTAIRS
-SITTING
-STANDING
-LAYING
+* WALKING
+* WALKING_UPSTAIRS
+* WALKING_DOWNSTAIRS
+* SITTING
+* STANDING
+* LAYING
 
 ## Extracted Features Fields
-tBodyAccMean()-X
-tBodyAccMean()-Y" 
-tBodyAccMean()-Z
-tBodyAccSTD()-X
-tBodyAccSTD()-Y
-tBodyAccSTD()-Z" 
-tGravityAccMean()-X
-tGravityAccMean()-Y
-tGravityAccMean()-Z
-tGravityAccSTD()-X" 
-tGravityAccSTD()-Y
-tGravityAccSTD()-Z
-tBodyAccJerkMean()-X
-tBodyAccJerkMean()-Y" 
-tBodyAccJerkMean()-Z
-tBodyAccJerkSTD()-X
-tBodyAccJerkSTD()-Y
-tBodyAccJerkSTD()-Z" 
-tBodyGyroMean()-X
-tBodyGyroMean()-Y
-tBodyGyroMean()-Z
-tBodyGyroSTD()-X" 
-tBodyGyroSTD()-Y
-tBodyGyroSTD()-Z
-tBodyGyroJerkMean()-X
-tBodyGyroJerkMean()-Y" 
-tBodyGyroJerkMean()-Z
-tBodyGyroJerkSTD()-X
-tBodyGyroJerkSTD()-Y
-tBodyGyroJerkSTD()-Z" 
-tBodyAccMagMean()
-tBodyAccMagSTD()
-tGravityAccMagMean()
-tGravityAccMagSTD()" 
-tBodyAccJerkMagMean()
-tBodyAccJerkMagSTD()
-tBodyGyroMagMean()
-tBodyGyroMagSTD()" 
-tBodyGyroJerkMagMean()
-tBodyGyroJerkMagSTD()
-fBodyAccMean()-X
-fBodyAccMean()-Y" 
-fBodyAccMean()-Z
-fBodyAccSTD()-X
-fBodyAccSTD()-Y
-fBodyAccSTD()-Z" 
-fBodyAccMeanFreq()-X
-fBodyAccMeanFreq()-Y
-fBodyAccMeanFreq()-Z
-fBodyAccJerkMean()-X" 
-fBodyAccJerkMean()-Y
-fBodyAccJerkMean()-Z
-fBodyAccJerkSTD()-X
-fBodyAccJerkSTD()-Y" 
-fBodyAccJerkSTD()-Z
-fBodyAccJerkMeanFreq()-X
-fBodyAccJerkMeanFreq()-Y
-fBodyAccJerkMeanFreq()-Z" 
-fBodyGyroMean()-X
-fBodyGyroMean()-Y
-fBodyGyroMean()-Z
-fBodyGyroSTD()-X" 
-fBodyGyroSTD()-Y
-fBodyGyroSTD()-Z
-fBodyGyroMeanFreq()-X
-fBodyGyroMeanFreq()-Y" 
-fBodyGyroMeanFreq()-Z
-fBodyAccMagMean()
-fBodyAccMagSTD()
-fBodyAccMagMeanFreq()" 
-fBodyBodyAccJerkMagMean()
-fBodyBodyAccJerkMagSTD()
-fBodyBodyAccJerkMagMeanFreq()
-fBodyBodyGyroMagMean()" 
-fBodyBodyGyroMagSTD()
-fBodyBodyGyroMagMeanFreq()
-fBodyBodyGyroJerkMagMean()
-fBodyBodyGyroJerkMagSTD()" 
-fBodyBodyGyroJerkMagMeanFreq()
-angle(tBodyAccMean,gravity)
-angle(tBodyAccJerkMean),gravityMean)
-angle(tBodyGyroMean,gravityMean)" 
-angle(tBodyGyroJerkMean,gravityMean)
-angle(X,gravityMean)
-angle(Y,gravityMean)
-angle(Z,gravityMean)
+*	tBodyAccMean()-X
+*	tBodyAccMean()-Y" 
+*	tBodyAccMean()-Z
+*	tBodyAccSTD()-X
+*	tBodyAccSTD()-Y
+*	tBodyAccSTD()-Z" 
+*	tGravityAccMean()-X
+*	tGravityAccMean()-Y
+*	tGravityAccMean()-Z
+*	tGravityAccSTD()-X" 
+*	tGravityAccSTD()-Y
+*	tGravityAccSTD()-Z
+*	tBodyAccJerkMean()-X
+*	tBodyAccJerkMean()-Y" 
+*	tBodyAccJerkMean()-Z
+*	tBodyAccJerkSTD()-X
+*	tBodyAccJerkSTD()-Y
+*	tBodyAccJerkSTD()-Z" 
+*	tBodyGyroMean()-X
+*	tBodyGyroMean()-Y
+*	tBodyGyroMean()-Z
+*	tBodyGyroSTD()-X" 
+*	tBodyGyroSTD()-Y
+*	tBodyGyroSTD()-Z
+*	tBodyGyroJerkMean()-X
+*	tBodyGyroJerkMean()-Y" 
+*	tBodyGyroJerkMean()-Z
+*	tBodyGyroJerkSTD()-X
+*	tBodyGyroJerkSTD()-Y
+*	tBodyGyroJerkSTD()-Z" 
+*	tBodyAccMagMean()
+*	tBodyAccMagSTD()
+*	tGravityAccMagMean()
+*	tGravityAccMagSTD()" 
+*	tBodyAccJerkMagMean()
+*	tBodyAccJerkMagSTD()
+*	tBodyGyroMagMean()
+*	tBodyGyroMagSTD()" 
+*	tBodyGyroJerkMagMean()
+*	tBodyGyroJerkMagSTD()
+*	fBodyAccMean()-X
+*	fBodyAccMean()-Y" 
+*	fBodyAccMean()-Z
+*	fBodyAccSTD()-X
+*	fBodyAccSTD()-Y
+*	fBodyAccSTD()-Z" 
+*	fBodyAccMeanFreq()-X
+*	fBodyAccMeanFreq()-Y
+*	fBodyAccMeanFreq()-Z
+*	fBodyAccJerkMean()-X" 
+*	fBodyAccJerkMean()-Y
+*	fBodyAccJerkMean()-Z
+*	fBodyAccJerkSTD()-X
+*	fBodyAccJerkSTD()-Y" 
+*	fBodyAccJerkSTD()-Z
+*	fBodyAccJerkMeanFreq()-X
+*	fBodyAccJerkMeanFreq()-Y
+*	fBodyAccJerkMeanFreq()-Z" 
+*	fBodyGyroMean()-X
+*	fBodyGyroMean()-Y
+*	fBodyGyroMean()-Z
+*	fBodyGyroSTD()-X" 
+*	fBodyGyroSTD()-Y
+*	fBodyGyroSTD()-Z
+*	fBodyGyroMeanFreq()-X
+*	fBodyGyroMeanFreq()-Y" 
+*	fBodyGyroMeanFreq()-Z
+*	fBodyAccMagMean()
+*	fBodyAccMagSTD()
+*	fBodyAccMagMeanFreq()" 
+*	fBodyBodyAccJerkMagMean()
+*	fBodyBodyAccJerkMagSTD()
+*	fBodyBodyAccJerkMagMeanFreq()
+*	fBodyBodyGyroMagMean()" 
+*	fBodyBodyGyroMagSTD()
+*	fBodyBodyGyroMagMeanFreq()
+*	fBodyBodyGyroJerkMagMean()
+*	fBodyBodyGyroJerkMagSTD()" 
+*	fBodyBodyGyroJerkMagMeanFreq()
+*	angle(tBodyAccMean,gravity)
+*	angle(tBodyAccJerkMean),gravityMean)
+*	angle(tBodyGyroMean,gravityMean)" 
+*	angle(tBodyGyroJerkMean,gravityMean)
+*	angle(X,gravityMean)
+*	angle(Y,gravityMean)
+*	angle(Z,gravityMean)
