@@ -1,11 +1,10 @@
 # Code Book
 
 ## ID Fields
-Subject
-Activity - activity performed when the corresponding measurements were taken
+* Subject
+* Activity - activity performed when the corresponding measurements were taken
 
-###
-Activity types
+### Activity types
 
 * WALKING
 * WALKING_UPSTAIRS
