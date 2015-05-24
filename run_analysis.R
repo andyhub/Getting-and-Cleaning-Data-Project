@@ -25,22 +25,11 @@ subjectMerged <- rbind(subjectTest, subjectTrain)
 colnames(subjectMerged) <- "Subject"
 subjectMerged$Subject <- as.factor(subjectMerged$Subject)
 
-filteredData <- cbind(featuresMerged, activityMerged, subjectMerged)
+filteredData <- cbind(subjectMerged,  activityMerged, featuresMerged)
 
-names(filteredData)<-gsub("Acc", "Accelerometer", names(filteredData), ignore.case = TRUE)
-names(filteredData)<-gsub("Gyro", "Gyroscope", names(filteredData), ignore.case = TRUE)
-names(filteredData)<-gsub("BodyBody", "Body", names(filteredData), ignore.case = TRUE)
-names(filteredData)<-gsub("Mag", "Magnitude", names(filteredData), ignore.case = TRUE)
-names(filteredData)<-gsub("^t", "Time", names(filteredData), ignore.case = TRUE)
-names(filteredData)<-gsub("^f", "Frequency", names(filteredData), ignore.case = TRUE)
-names(filteredData)<-gsub("tBody", "TimeBody", names(filteredData), ignore.case = TRUE)
 names(filteredData)<-gsub("-mean()", "Mean", names(filteredData), ignore.case = TRUE)
 names(filteredData)<-gsub("-std()", "STD", names(filteredData), ignore.case = TRUE)
 names(filteredData)<-gsub("-freq()", "Frequency", names(filteredData), ignore.case = TRUE)
-names(filteredData)<-gsub("angle", "Angle", names(filteredData), ignore.case = TRUE)
-names(filteredData)<-gsub("gravity", "Gravity", names(filteredData), ignore.case = TRUE)
-
-filteredData <- data.table(filteredData)
 
 tidyData <- aggregate(. ~Subject + Activity, filteredData, mean)
 tidyData <- tidyData[order(tidyData$Subject,tidyData$Activity),]
